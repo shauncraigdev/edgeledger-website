@@ -96,3 +96,19 @@ img {
   max-width: 600px;
   margin: 20px 0 30px;
 }
+
+/* Position this before or after the element */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Position the title and paragraph above the overlay */
+.hero * {
+  z-index: 10;
+}
